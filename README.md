@@ -10,6 +10,12 @@ Recruiter-facing slice of a weather-market trading system. This repository keeps
 - Input validation and clear error handling
 - Unit tests around edge cases
 
+## What Recruiters Should Inspect
+
+- The bracket parser and settlement resolver tests
+- How production-sensitive automation is reduced to a public-safe deterministic slice
+- The explicit absence of execution logic, sizing, optimizer weights, order IDs, and logs
+
 ## What Is Intentionally Not Included
 
 - API credentials, private keys, `.env` files, databases, logs, or trade history
@@ -27,4 +33,3 @@ pip install -e .[dev]
 pytest
 python -m weather_resolver.cli --label "72 to 74" --actual 73.4
 ```
-
